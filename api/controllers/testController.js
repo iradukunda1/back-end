@@ -37,8 +37,8 @@
 })
  data.post("/del",(req,res)=>{
   	test.deleteOne({_id:req.body.id})
- 	.then(s=>{
- 		if(s){
+ 	.then(data=>{
+ 		if(data){
  			res.send("deleted")
  		}else{
  			res.send("blah blah blah")	

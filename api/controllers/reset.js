@@ -3,9 +3,7 @@
  const server = express.Router()
 
 
-//insert data into mongo db
 server.post("/insert",(req,res,next)=>{
-  
   let inserted_email= {email:req.body.email}
   if(req.body.length>0){
     EmailModel.create(inserted_email)

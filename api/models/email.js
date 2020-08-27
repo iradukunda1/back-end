@@ -4,7 +4,8 @@ mongoose.set('useCreateIndex',true)
 let emailschema= new mongoose.Schema({
 	email:{
 		type:String,
-		unique:true,		
+		unique:true,
+		trim:true
 	}
 },
 
