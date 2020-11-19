@@ -25,7 +25,7 @@ app.use(cors())
 //router with middleware of routes
 app.use('/api', routes);
 app.get('/',(req,res) =>{
-    res.send('Welcome to Back-end Api')
+    res.send('Welcome to Back-end Api but Please use /api/v1/')
 })
 
 
